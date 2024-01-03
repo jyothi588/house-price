@@ -16,7 +16,7 @@ Type  = {
 "Apartment" : 0,"Independent Floor" : 1,"Independent House" : 2,"Residential Plot" : 3,"Studio Apartment" : 4,"Villa" : 5,}
 
 # Loading the Model pickle file
-model =  pickle.load(open('House_price.pkl','rb'))
+model =  pickle.load(open('House_Price.pkl','rb'))
 
 # Creating the function funtion to accept inputs and creating an 2d array and predicting the result.
 
