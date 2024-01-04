@@ -46,8 +46,7 @@ def result():
     location=int(request.form['location'])
     facing=int(request.form['facing'])
     Types=int(request.form['type'])
-    user_input = np.array([[bedrooms,bathrooms,status
-                       ,location,facing,Types]])
+    user_input = np.array([[bedrooms,bathrooms,status,size,location,facing,Types]])
     
     result = model.predict(user_input)[0].round(2)
     return render_template('index.html',prediction=result,Status=Status,Location=Location,Facing=Facing,Type=Type)
@@ -62,4 +61,4 @@ def home():
     return "Hello jyoo!!1"
 
 if __name__=="__main__":
-    application.run(use_reloader=True,debug=True)
+    application.run()

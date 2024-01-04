@@ -17,7 +17,7 @@
         <label>Location</label>
         <select name="location">
             {% for key,value in Location.items() %}
-            <option value="'{{value}}">
+            <option value="{{value}}">
                 {{key}}</option>
                 {% endfor %}
         </select><br><br>
@@ -30,7 +30,7 @@
         <label>Property Status</label>
         <select name="status">
             {% for key,value in Status.items() %}
-            <option value="'{{value}}">
+            <option value="{{value}}">
                 {{key}}</option>
                 {% endfor %}
         </select><br><br>
@@ -38,7 +38,7 @@
         <label>Direction of Facing</label>
         <select name="facing">
             {% for key,value in Facing.items() %}
-            <option value="'{{value}}">
+            <option value="{{value}}">
                 {{key}}</option>
                 {% endfor %}
         </select><br><br>
@@ -46,7 +46,7 @@
         <label>Type of Property</label>
         <select name="type">
             {% for key,value in Type.items() %}
-            <option value="'{{value}}">
+            <option value="{{value}}">
                 {{key}}</option>
                 {% endfor %}
         </select><br><br>
